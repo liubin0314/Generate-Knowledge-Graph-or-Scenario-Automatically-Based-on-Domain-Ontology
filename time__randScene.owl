@@ -1,0 +1,1609 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.nudt.edu.cn/liubin11#"
+     xml:base="http://www.nudt.edu.cn/liubin11"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#">
+    <owl:Ontology rdf:about="http://www.nudt.edu.cn/liubin11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2006/time#after -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#after">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2006/time#before"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2006/time#before"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#before -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#before"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#endInstant -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#endInstant"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalContains -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalContains">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2006/time#intervalDuring"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalDuring -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalDuring">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalEquals -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalEquals">
+        <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalFinishedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalFinishedBy">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2006/time#intervalFinishes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalFinishes -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalFinishes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalIn"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalMeets -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalMeets">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2006/time#intervalMetBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalMetBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalMetBy"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalOverlappedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalOverlappedBy">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2006/time#intervalOverlaps"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalOverlaps -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalOverlaps">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalStartedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalStartedBy">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2006/time#intervalStarts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalStarts -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalStarts">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#startInstant -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#startInstant"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2006/time#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#id">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#maxIndividualsNum -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#maxIndividualsNum"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#timeVal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#timeVal">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#timeValLong -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#timeValLong">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#maxIndividualsNum"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#timeVal"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2000-01-01T00:00:01Z</xsd:minExclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2020-09-19T19:09:16Z</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#endInstant"/>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#startInstant"/>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#maxIndividualsNum"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Instant"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2006/time#Interval"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#id"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_0">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2005-03-26T21:28:54Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">5</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_CYtGPWl1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_1">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2016-05-15T08:18:34Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">50</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_WoYTzFmEVy1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_10">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">10</time:timeValLong>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2018-09-23T15:38:04Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_vXVPfKvfaITVM1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_11">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2010-02-28T13:52:06Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">34</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_wofAabFZEDIusyG1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_12">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2005-08-20T07:27:20Z</time:timeVal>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">24</time:timeValLong>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_WNYwikJYMBwtLnFm1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_13">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2012-02-22T17:14:33Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">38</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_vVlhryddtcMMY1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_14">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2018-02-12T23:29:06Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">7</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_mqpktoEiHR1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_15">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2</time:timeValLong>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2015-03-21T05:40:41Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_hELzYBCWjV1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_16">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">12</time:timeValLong>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2002-11-02T17:57:08Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_qfsDgqar1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_17">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2017-04-03T15:46:58Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">4</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_MKfCo1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_18">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2014-02-08T14:59:51Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">48</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_vWoxQ1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_19">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2002-04-07T17:00:42Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">47</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_YeD1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_2">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">16</time:timeValLong>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2001-08-25T15:22:15Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_xBsasGt1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_20">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2017-12-08T17:31:08Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">6</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_xZuxJHv1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_21">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2013-09-22T03:16:16Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">37</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_fZer1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_22">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2002-07-17T14:02:18Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">32</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_sOjbGhRLqkEysB1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_23">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">20</time:timeValLong>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2008-12-09T19:52:38Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_nDdw1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_24">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2006-01-03T18:55:27Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">39</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_gZNRYiRSWGy1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_25">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2015-02-26T16:16:35Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">44</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_xHcM1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_26">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2005-11-22T15:27:39Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">7</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_zYtCeGt1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_27">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">19</time:timeValLong>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2007-03-06T11:15:30Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_AjaszolgRR1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_28">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2009-06-06T03:42:46Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">7</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_IlVrL1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_29 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_29">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2013-11-26T00:07:01Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">40</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_KEtNdLfh1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_3">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2012-12-11T17:39:46Z</time:timeVal>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">22</time:timeValLong>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_NkmFlW1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_30">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2017-07-31T03:47:20Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">49</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_PKXezP1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_31 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_31">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2</time:timeValLong>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2013-07-13T03:16:15Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_SSY1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_4">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">20</time:timeValLong>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2003-10-19T00:19:12Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_cyTOllCddPfmL1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_5">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2000-08-30T10:05:13Z</time:timeVal>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">30</time:timeValLong>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_ztmKBtlS1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_6">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">16</time:timeValLong>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2006-03-02T10:39:52Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_Jv1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_7">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2014-09-04T23:23:52Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">41</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_allL1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_8">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">19</time:timeValLong>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2008-05-02T05:34:02Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_Msim1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Instant_736876399_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Instant_736876399_9">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:timeVal rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2006-07-02T15:41:05Z</time:timeVal>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</time:maxIndividualsNum>
+        <time:timeValLong rdf:datatype="http://www.w3.org/2001/XMLSchema#long">43</time:timeValLong>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_TXpLsboMnvJ1</time:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval570930101_0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Interval570930101_0">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_QtK1</time:id>
+        <time:endInstant rdf:resource="http://www.w3.org/2006/time#Instant_736876399_23"/>
+        <time:startInstant rdf:resource="http://www.w3.org/2006/time#Instant_736876399_9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval570930101_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Interval570930101_1">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_tNKHrscM1</time:id>
+        <time:startInstant rdf:resource="http://www.w3.org/2006/time#Instant_736876399_13"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval570930101_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Interval570930101_2">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_schUViJieHuvzayi1</time:id>
+        <time:endInstant rdf:resource="http://www.w3.org/2006/time#Instant_736876399_6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval570930101_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Interval570930101_3">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_psI1</time:id>
+        <time:startInstant rdf:resource="http://www.w3.org/2006/time#Instant_736876399_14"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval570930101_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Interval570930101_4">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_SEeSbnmYD1</time:id>
+        <time:startInstant rdf:resource="http://www.w3.org/2006/time#Instant_736876399_16"/>
+        <time:endInstant rdf:resource="http://www.w3.org/2006/time#Instant_736876399_7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval570930101_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2006/time#Interval570930101_5">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <time:maxIndividualsNum rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</time:maxIndividualsNum>
+        <time:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r_mtJZhpdnjGpLf1</time:id>
+        <time:startInstant rdf:resource="http://www.w3.org/2006/time#Instant_736876399_21"/>
+        <time:endInstant rdf:resource="http://www.w3.org/2006/time#Instant_736876399_30"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.nudt.edu.cn/liubin11">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">自动生成场景,版权所有liubin0314@qq.com、15116333743@139.com</owl:versionInfo>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#A">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#IA">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#C">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#B">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#IB">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#D">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#VA">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#VB">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                                                                                                                        <swrl:argument1 rdf:resource="urn:swrl#C"/>
+                                                                                                                        <swrl:argument2 rdf:resource="urn:swrl#D"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                                                                                                                <swrl:argument1 rdf:resource="urn:swrl#B"/>
+                                                                                                                <swrl:argument2 rdf:resource="urn:swrl#C"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                                                                                                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                                                                                                        <swrl:argument2 rdf:resource="urn:swrl#B"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#endInstant"/>
+                                                                                                <swrl:argument2 rdf:resource="urn:swrl#D"/>
+                                                                                                <swrl:argument1 rdf:resource="urn:swrl#IB"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl#D"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#startInstant"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl#B"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl#IB"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Interval"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#IB"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#B"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#endInstant"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#C"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#IA"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#C"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#startInstant"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#A"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#IA"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Interval"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#IA"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#intervalOverlaps"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#IA"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#IB"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Interval"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#IA"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#startInstant"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#A"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#IA"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#C"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#endInstant"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#C"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#IA"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#B"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Interval"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#IB"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#startInstant"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl#B"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl#IB"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl#D"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#endInstant"/>
+                                                                                                <swrl:argument2 rdf:resource="urn:swrl#D"/>
+                                                                                                <swrl:argument1 rdf:resource="urn:swrl#IB"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                                                                                                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                                                                                                        <swrl:argument2 rdf:resource="urn:swrl#B"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                                                                                                                <swrl:argument2 rdf:resource="urn:swrl#C"/>
+                                                                                                                <swrl:argument1 rdf:resource="urn:swrl#D"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#intervalDuring"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#IA"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#IB"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Interval"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#IA"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#C"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#endInstant"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#C"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#IA"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#B"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Interval"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#IB"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#startInstant"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#B"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#IB"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl#D"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                                                                                        <swrl:argument2 rdf:resource="urn:swrl#B"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl#C"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#IA"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#IB"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#B"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#C"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#B"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#B"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#C"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#C"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#B"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="urn:swrl#VA"/>
+                                                            <rdf:Description rdf:about="urn:swrl#VB"/>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#timeVal"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#B"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#VB"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#timeVal"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#VA"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#B"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <rdfs:comment>时间段的开始时刻要早于结束时刻</rdfs:comment>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Interval"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#IA"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#startInstant"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#A"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#IA"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#C"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#endInstant"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#C"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#IA"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#C"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#B"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#B"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#C"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Interval"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#C"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Interval"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#B"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/2006/time#Interval"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.w3.org/2006/time#before"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#A"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#C"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.7) http://owlapi.sourceforge.net -->
+
