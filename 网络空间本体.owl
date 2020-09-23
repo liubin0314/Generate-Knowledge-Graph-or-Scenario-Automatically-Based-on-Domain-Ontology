@@ -1,0 +1,340 @@
+@prefix : <http://www.semanticweb.org/liubin0314/ontologies/2019/5/RMO#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/liubin0314/network> .
+
+<http://www.semanticweb.org/liubin0314/network> rdf:type owl:Ontology ;
+                                                 rdfs:comment "网络空间本体" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/liubin0314/network#connectedTo
+:connectedTo rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liubin0314/network#hasAddress
+:hasAddress rdf:type owl:ObjectProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :服务器
+                                        :终端
+                                        :路由器
+                                      )
+                        ] ;
+            rdfs:range :IP地址 .
+
+
+###  http://www.semanticweb.org/liubin0314/network#hasPort
+:hasPort rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liubin0314/network#安装
+:安装 rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/liubin0314/network#ipNum1
+:ipNum1 rdf:type owl:DatatypeProperty ;
+        rdfs:domain :IP地址 ;
+        rdfs:range [ rdf:type rdfs:Datatype ;
+                     owl:onDatatype xsd:int ;
+                     owl:withRestrictions ( [ xsd:minExclusive "0"^^xsd:int
+                                            ]
+                                            [ xsd:maxInclusive "255"^^xsd:int
+                                            ]
+                                          )
+                   ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#ipNum2
+:ipNum2 rdf:type owl:DatatypeProperty ;
+        rdfs:domain :IP地址 ;
+        rdfs:range [ rdf:type rdfs:Datatype ;
+                     owl:onDatatype xsd:int ;
+                     owl:withRestrictions ( [ xsd:minExclusive "0"^^xsd:int
+                                            ]
+                                            [ xsd:maxInclusive "255"^^xsd:int
+                                            ]
+                                          )
+                   ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#ipNum3
+:ipNum3 rdf:type owl:DatatypeProperty ;
+        rdfs:domain :IP地址 ;
+        rdfs:range [ rdf:type rdfs:Datatype ;
+                     owl:onDatatype xsd:int ;
+                     owl:withRestrictions ( [ xsd:minExclusive "0"^^xsd:int
+                                            ]
+                                            [ xsd:maxInclusive "255"^^xsd:int
+                                            ]
+                                          )
+                   ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#ipNum4
+:ipNum4 rdf:type owl:DatatypeProperty ;
+        rdfs:domain :IP地址 ;
+        rdfs:range [ rdf:type rdfs:Datatype ;
+                     owl:onDatatype xsd:int ;
+                     owl:withRestrictions ( [ xsd:minExclusive "0"^^xsd:int
+                                            ]
+                                            [ xsd:maxInclusive "255"^^xsd:int
+                                            ]
+                                          )
+                   ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#maxIndividualsNum
+:maxIndividualsNum rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liubin0314/network#portNumber
+:portNumber rdf:type owl:DatatypeProperty ;
+            rdfs:domain :服务器 ;
+            rdfs:range [ rdf:type rdfs:Datatype ;
+                         owl:onDatatype xsd:int ;
+                         owl:withRestrictions ( [ xsd:minInclusive "0"^^xsd:int
+                                                ]
+                                                [ xsd:maxInclusive "65535"^^xsd:int
+                                                ]
+                                              )
+                       ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#portProtocol
+:portProtocol rdf:type owl:DatatypeProperty ;
+              rdfs:domain :服务器 ;
+              rdfs:range [ rdf:type rdfs:Datatype ;
+                           owl:oneOf [ rdf:type rdf:List ;
+                                       rdf:first "IP" ;
+                                       rdf:rest [ rdf:type rdf:List ;
+                                                  rdf:first "TCP" ;
+                                                  rdf:rest rdf:nil
+                                                ]
+                                     ]
+                         ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#portState
+:portState rdf:type owl:DatatypeProperty ;
+           rdfs:domain :服务器 ;
+           rdfs:range [ rdf:type rdfs:Datatype ;
+                        owl:oneOf [ rdf:type rdf:List ;
+                                    rdf:first "closed" ;
+                                    rdf:rest [ rdf:type rdf:List ;
+                                               rdf:first "open" ;
+                                               rdf:rest rdf:nil
+                                             ]
+                                  ]
+                      ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/liubin0314/network#DNS服务器
+:DNS服务器 rdf:type owl:Class ;
+        rdfs:subClassOf :服务器 .
+
+
+###  http://www.semanticweb.org/liubin0314/network#IP地址
+:IP地址 rdf:type owl:Class ;
+      rdfs:subClassOf :地址 .
+
+
+###  http://www.semanticweb.org/liubin0314/network#交换器
+:交换器 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liubin0314/network#台式机
+:台式机 rdf:type owl:Class ;
+     rdfs:subClassOf :终端 ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :connectedTo ;
+                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onClass [ rdf:type owl:Class ;
+                                     owl:unionOf ( :局域网交换器
+                                                   :普通路由器
+                                                 )
+                                   ]
+                     ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#地址
+:地址 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liubin0314/network#外联路由器
+:外联路由器 rdf:type owl:Class ;
+       rdfs:subClassOf :路由器 ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :maxIndividualsNum ;
+                         owl:hasValue 1
+                       ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#局域网交换器
+:局域网交换器 rdf:type owl:Class ;
+        rdfs:subClassOf :交换器 ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :connectedTo ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :普通路由器
+                        ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#应用服务器
+:应用服务器 rdf:type owl:Class ;
+       rdfs:subClassOf :服务器 .
+
+
+###  http://www.semanticweb.org/liubin0314/network#手机
+:手机 rdf:type owl:Class ;
+    rdfs:subClassOf :终端 ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :connectedTo ;
+                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onClass [ rdf:type owl:Class ;
+                                    owl:unionOf ( :局域网交换器
+                                                  :普通路由器
+                                                )
+                                  ]
+                    ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#打印机
+:打印机 rdf:type owl:Class ;
+     rdfs:subClassOf :终端 ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :connectedTo ;
+                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onClass [ rdf:type owl:Class ;
+                                     owl:unionOf ( :局域网交换器
+                                                   :普通路由器
+                                                 )
+                                   ]
+                     ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#数据库服务器
+:数据库服务器 rdf:type owl:Class ;
+        rdfs:subClassOf :服务器 .
+
+
+###  http://www.semanticweb.org/liubin0314/network#普通路由器
+:普通路由器 rdf:type owl:Class ;
+       rdfs:subClassOf :路由器 ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :connectedTo ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :骨干路由器
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :maxIndividualsNum ;
+                         owl:hasValue 15
+                       ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#服务器
+:服务器 rdf:type owl:Class ;
+     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                       owl:onProperty :connectedTo ;
+                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onClass :骨干路由器
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :maxIndividualsNum ;
+                       owl:hasValue 1
+                     ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#程控电话
+:程控电话 rdf:type owl:Class ;
+      rdfs:subClassOf :终端 ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :connectedTo ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :程控电话交换器
+                      ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#程控电话交换器
+:程控电话交换器 rdf:type owl:Class ;
+         rdfs:subClassOf :交换器 .
+
+
+###  http://www.semanticweb.org/liubin0314/network#笔记本
+:笔记本 rdf:type owl:Class ;
+     rdfs:subClassOf :终端 ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :connectedTo ;
+                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onClass [ rdf:type owl:Class ;
+                                     owl:unionOf ( :局域网交换器
+                                                   :普通路由器
+                                                 )
+                                   ]
+                     ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#终端
+:终端 rdf:type owl:Class ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                      owl:onProperty :maxIndividualsNum ;
+                      owl:hasValue 15
+                    ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#网关主机
+:网关主机 rdf:type owl:Class ;
+      rdfs:subClassOf :服务器 .
+
+
+###  http://www.semanticweb.org/liubin0314/network#路由器
+:路由器 rdf:type owl:Class ;
+     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                       owl:onProperty :安装 ;
+                       owl:someValuesFrom :防火墙
+                     ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#防火墙
+:防火墙 rdf:type owl:Class ;
+     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                       owl:onProperty :maxIndividualsNum ;
+                       owl:hasValue 6
+                     ] .
+
+
+###  http://www.semanticweb.org/liubin0314/network#骨干路由器
+:骨干路由器 rdf:type owl:Class ;
+       rdfs:subClassOf :路由器 ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :connectedTo ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :外联路由器
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :maxIndividualsNum ;
+                         owl:hasValue 4
+                       ] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
