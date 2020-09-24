@@ -1,0 +1,1 @@
+java -jar -Xms4G -Xmx16G TimGangScenarioGeneratorV2.0.2-SnapShot.jar
